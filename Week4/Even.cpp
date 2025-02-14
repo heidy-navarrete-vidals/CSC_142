@@ -54,26 +54,29 @@ int main() {
 
     for (int i = 0; i < 1000; ++i) {
         int randomNum = rand() % 101;
-        std::cout<<randomNum<<" ";
+        // std::cout<<randomNum<<" ";
         total++;
 
         x = isEven(randomNum);
-        if (x){
-            std::cout<<"This is an even number."<<"\n";
+        if (x)
+        {
+           // std::cout<<"This is an even number."<<"\n";
             evens++;
 
-        } else {
-            std::cout<<"This is an odd number."<<"\n";
+        } 
+        else 
+        {
+           // std::cout<<"This is an odd number."<<"\n";
             odds++;
         }
     }
 
     // Number Display
-    std::cout<<"Total Random Numbers: "<<total<<std::endl;
+    std::cout<<"Total Random Numbers Generated: "<<total<<std::endl;
 
-    std::cout<<"Total Even Numbers: "<<evens<<std::endl;
+    std::cout<<"Total Even Numbers Generated: "<<evens<<std::endl;
 
-    std::cout<<"Toal Odd Numbers: "<<odds<<std::endl;
+    std::cout<<"Toal Odd Numbers Generated: "<<odds<<std::endl;
 
 
 

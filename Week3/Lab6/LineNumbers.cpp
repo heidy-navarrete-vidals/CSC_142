@@ -72,9 +72,9 @@ int main() {
     // Variable declarations
     std::string readingFile;
     std::string writingFile;
-    int num = 1;
+    int lineNum = 1;
 
-    // Prompting user
+    // There was an error with mine and the only thing that worked for these two prompts was responding with the FULL path of the files.
     std::cout<<"Enter the .txt file you would like to read:"<<std::endl;
     std::getline(std::cin, readingFile);
 
@@ -85,16 +85,16 @@ int main() {
     std::ifstream inFile(readingFile);
     std::string text;
 
-
     // Opening file for writing
     std::ofstream outFile(writingFile);
 
 
     while (std::getline(inFile, text)) 
     {
-       outFile<<num<<". "<<text<<"\n";
-       num += 1;
+       outFile<<lineNum<<". "<<text<<"\n";
+       lineNum += 1;
     }
+
 
     inFile.close();
     outFile.close();
