@@ -8,12 +8,13 @@
                 "-fdiagnostics-color=always",
                 "-g",
                 "-std=c++23",
-                "${file}",
+                "${fileDirname}\\BookTester.cpp",
+                "${fileDirname}\\BookDef.cpp", 
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],
             "options": {
-                "cwd": "C:\\msys64\\ucrt64\\bin"
+                "cwd": "${fileDirname}"
             },
             "problemMatcher": [
                 "$gcc"
